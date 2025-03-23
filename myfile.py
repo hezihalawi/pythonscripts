@@ -1,1 +1,1 @@
-printf("tryme")
+print("tryme")
