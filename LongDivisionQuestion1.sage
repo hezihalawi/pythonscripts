@@ -3,7 +3,7 @@ class PolynominalLongDivisionQuestion(QuestionQuiz):
         super().__init__(google_form_url=google_form_url,google_form_key=google_form_key, canBerefresh=canBerefresh,state=state,maxscore=maxscore)
         self.min_bound=min_bound
         self.max_bound=max_bound
-        P.<x>=PolynomialRing(QQ)
+        P=PolynomialRing(QQ,["x"])
         self.P=P
         self.refreshquestion()
 
@@ -54,7 +54,7 @@ class PolynominalLongDivisionQuestion(QuestionQuiz):
                                           howwrite="איך מזינים"
                                           )
 
-        table_str_rows="<tr>" + "<th> {var_name}</th>" + "<th> {sduent_ans} </th>" + "<th> {expect_ans} </th>" + "<th align=left; dir=""ltr""> {howwrite} </th>"  "</tr>"
+        table_str_rows="<tr>" + "<th> {var_name}</th>" + "<th> {sduent_ans} </th>" + "<th> {expect_ans} </th>" + "<th align=left; dir=""rtl""> {howwrite} </th>"  "</tr>"
         table_html+=table_str_rows.format(var_name=" \\(q(x)\\)",
                                           sduent_ans=" \\( " + latex(self.stuntent_ans["q"]) +"\\)",
                                           expect_ans=" \\( " + latex(self.expect_ans["q"]) +"\\)",
