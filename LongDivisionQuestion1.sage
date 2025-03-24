@@ -54,7 +54,7 @@ class PolynominalLongDivisionQuestion(QuestionQuiz):
                                           howwrite="איך מזינים"
                                           )
 
-        table_str_rows="<tr>" + "<th> {var_name}</th>" + "<th> {sduent_ans} </th>" + "<th> {expect_ans} </th>" + "<th align=left; dir=""rtl""> {howwrite} </th>"  "</tr>"
+        table_str_rows="<tr>" + "<th> {var_name}</th>" + "<th> {sduent_ans} </th>" + "<th> {expect_ans} </th>" + "<th align=left; dir=""ltr""> {howwrite} </th>"  "</tr>"
         table_html+=table_str_rows.format(var_name=" \\(q(x)\\)",
                                           sduent_ans=" \\( " + latex(self.stuntent_ans["q"]) +"\\)",
                                           expect_ans=" \\( " + latex(self.expect_ans["q"]) +"\\)",
