@@ -8,35 +8,7 @@ class PolynominalLongDivisionQuestion(QuestionQuiz):
         self.refreshquestion()
 
     def submit_stuntent_ans_google(self):
-        def fill_form():
-            value = {
-    # userid
-    #   Option: any text
-    "entry.623382413": "test1",
-    # score
-    #   Option: any text
-    "entry.2023283374": "n,m",
-    # mode
-    #   Option: any text
-    "entry.479389088": "jjj",
-    # qvar
-    #   Option: any text
-    "entry.2073165540": "jjj",
-    # studentans
-    #   Option: any text
-    "entry.885070597": "kjhkjh"
-}
-            print(value, flush = True)
-            return value
-        def submit(url, data):
-            try:
-                print(url,data)
-                r=requests.post(url, data = data, timeout=10)
-                print("Submitted successfully!")
-            except requests.exceptions.Timeout:
-                print("Timed out")
-
-        submit(self.google_form_url,fill_form())
+        pass
 
     def grade_ans(self):
         isCorrect=True
