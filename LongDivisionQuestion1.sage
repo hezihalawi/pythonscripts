@@ -84,7 +84,7 @@ class PolynominalLongDivisionQuestion(QuestionQuiz):
         str_print="{var_name}={yours}"
         for key in self.stuntent_ans:
             if (self.stuntent_ans[key]=="None"):
-                show(html("<p>נא להזין ערכים לכל הביטויים</p>"))
+                show(html("<p></p>"))
                 return 
         for key in self.stuntent_ans:
             self.stuntent_ans[key]= self.store_ans[key]
