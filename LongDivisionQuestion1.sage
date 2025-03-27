@@ -16,7 +16,7 @@ class PolynominalLongDivisionQuestion(QuestionQuiz):
         for key in self.store_ans:
             print(self.store_ans[key])
             if (self.store_ans[key]=="None"):
-                show(html(""))
+                show(html("<p></p>"))
                 return 
 
         table_str=""
