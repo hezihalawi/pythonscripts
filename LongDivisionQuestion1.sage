@@ -82,7 +82,6 @@ class PolynominalLongDivisionQuestion(QuestionQuiz):
 
     def store_stuntent_ans(self):
         str_print="{var_name}={yours}"
-        print(self.store_ans)
         for key in self.store_ans:
             if (self.store_ans[key]=="None"):
                 show(html("<p></p>"))
