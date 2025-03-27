@@ -12,9 +12,7 @@ class PolynominalLongDivisionQuestion(QuestionQuiz):
 
     def grade_ans(self):
         isCorrect=True
-        print("try")
         for key in self.store_ans:
-            print(self.store_ans[key])
             if (self.store_ans[key]=="None"):
                 show(html("<p></p>"))
                 return 
@@ -84,6 +82,10 @@ class PolynominalLongDivisionQuestion(QuestionQuiz):
 
     def store_stuntent_ans(self):
         str_print="{var_name}={yours}"
+        for key in self.stuntent_ans:
+            if (self.stuntent_ans[key]=="None"):
+                show(html("<p>נא להזין ערכים לכל הביטויים</p>"))
+                return 
         for key in self.stuntent_ans:
             self.stuntent_ans[key]= self.store_ans[key]
         table_html = "<p>המערכת זיהתה שהכנסת את התשובות הבאות:<table border='1' style='border-collapse: collapse; width: 100%;'>"
