@@ -13,7 +13,7 @@ class PolynominalLongDivisionQuestion(QuestionQuiz):
     def grade_ans(self):
         isCorrect=True
         for key in self.store_ans:
-            if (self.store_ans[key]==None):
+            if (self.store_ans[key]=="None"):
                 return
 
         table_str=""
