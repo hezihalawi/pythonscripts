@@ -115,7 +115,7 @@ class LimQuestion(QuestionQuiz):
         html_code += """
 חשבו את הגבול הבא:
 
-$$ \lim_{x \\to {a}} \frac{{\\sqrt{{{expression}}} - {a}}}{{{c}}} $$
+$$ \\lim_{x \\to {a}} \\frac{{\\sqrt{{{expression}}} - {a}}}{{{c}}} $$
  </p>
 """
 
